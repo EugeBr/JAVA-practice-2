@@ -1,7 +1,9 @@
 package com.ironhack.w1.d2;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -60,6 +62,33 @@ public class Main {
         System.out.println(Math.sqrt(64));
         System.out.println(Math.pow(2, 5));
         System.out.println((int) Math.pow(2, 5)); //CASTING (pedimos un numero entero)
+
+// ARRAYLISTS
+
+        List<String> countries = new ArrayList<>();
+        countries.add("España");
+        countries.add("Portugal");
+        System.out.println(countries);
+        System.out.println(countries.get(0));
+        countries.set(0, "Italia");
+        System.out.println(countries.get(0));
+        System.out.println(countries.size()); //length
+        countries.remove(0);
+
+        // List<int> intList = new ArrayList<>(); ArrayList doesn't work with primitive types
+        List<Integer> intList = new ArrayList<>(); //It's ok to use wrappers
+
+// ADD ELEMENTS TO ARRAY
+
+        int[] numbers = {0, 1, 2, 3, 4};
+        numbers[5] = 5; //esto no se puede hacer con un Array
+
+        //alternativa
+       /* int[] newArray = new int[6];
+        for(int i = 0; i < 5; i++){
+            newArray[i] = numbers[i];
+        }
+        newArray[5] = 5;*/
 
     }
 
