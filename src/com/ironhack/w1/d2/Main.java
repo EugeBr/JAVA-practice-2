@@ -1,5 +1,7 @@
 package com.ironhack.w1.d2;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,9 +12,22 @@ public class Main {
 // for loop
         System.out.println("==== For ====");
         for (int i = 0; i < names.length; i++) {
+            if(names[i].equals("Paul")) continue; //condition to skip that index
             System.out.println(names[i]);
             if(names[i].equals("Maria")) break; //condition to stop loop
         }
+
+// how to store even numbers in array example
+        int[] evenNumbers = new int[51];
+        int j = 0;
+        for (int i = 0; i <= 100; i++){
+            if (i % 2 == 0){
+                evenNumbers[j] = i;
+                j++;
+            }
+        }
+
+        System.out.println(Arrays.toString(evenNumbers)); // how to print full array
 
 // foreach loop
         System.out.println("==== Foreach ====");
@@ -28,6 +43,7 @@ public class Main {
         }
 
 // do while loop
+// (executes at least ones)
         System.out.println("==== Do while ====");
         i = 0;
         do {
@@ -39,7 +55,7 @@ public class Main {
         System.out.println(subjectsArray[2]);
     }
 
-    // how to create a new array
+// how to create a new array
     public static String[] createSubjectsArray(){
         String[] subjects = new String[5];
         subjects[0] = "Matematicas";
