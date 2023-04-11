@@ -1,5 +1,6 @@
 package com.ironhack.w1.d2;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class Main {
@@ -53,6 +54,13 @@ public class Main {
         String[] subjectsArray = createSubjectsArray();
         System.out.println(subjectsArray[2]); //no imprime el array solo la posicion de memoria "[Ljava.lang.String;@e9e54c2"
         System.out.println(subjectsArray[2]);
+
+// MATH CLASS
+
+        System.out.println(Math.sqrt(64));
+        System.out.println(Math.pow(2, 5));
+        System.out.println((int) Math.pow(2, 5)); //CASTING (pedimos un numero entero)
+
     }
 
 // how to create a new array
