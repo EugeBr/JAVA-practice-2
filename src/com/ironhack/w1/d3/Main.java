@@ -8,6 +8,15 @@ public class Main {
         System.out.println("Title: " + harryPotter.getTitle());
         System.out.println("Duration: " + harryPotter.getDuration());
         Movie.getAlert();
+        System.out.println(esdla.toString());
+        System.out.println(harryPotter.IS_GOOD);
 
+        HorrorMovie scream = new HorrorMovie("Scream", 138, false);
+        System.out.println(scream.getTitle() + scream.isReallyScary());
+        System.out.println(scream.toString());
+    }
+
+    public static Movie movieCreator(String title, int duration){
+        return new Movie(title, duration);
     }
 }
