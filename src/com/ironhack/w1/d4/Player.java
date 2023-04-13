@@ -29,6 +29,6 @@ public abstract class Player {
         this.currentTrack++;
     }
 
-    // ABSTRACT METHOD
+    //* ABSTRACT METHOD
     public abstract void close();
 }
