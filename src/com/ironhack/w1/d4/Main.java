@@ -6,5 +6,10 @@ public class Main {
         Player webPlayer = new WebPlayer(0.3, 2);
 
         System.out.println(webPlayer.getCurrentTrack());
+        AndroidPlayer androidPlayer = new AndroidPlayer(0.8, 3);
+        IPlayable androidPlayer2 = new AndroidPlayer(0.5, 4);
+        androidPlayer.close();
+        androidPlayer.play();
+        //*androidPlayer2.close(); // type Interface its limited to its own methods
     }
 }

@@ -5,4 +5,7 @@ public interface IPlayable {
     void pause();
     void mute();
     void increaseVolume();
+
+    final double MAX_VOLUME = 1; //* no need to write final
+    //* constants are not mandatory to use
 }
